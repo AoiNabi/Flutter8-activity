@@ -1,34 +1,72 @@
-# Python
+# Entornos virtuales
+venv/
+.venv/
+env/
+.env/
+ENV/
+env.bak/
+venv.bak/
+
+# Archivos de Python
 __pycache__/
 *.py[cod]
+*$py.class
 *.so
 .Python
 
-# Entorno virtual
-venv/
-env/
-ENV/
-
-# Base de datos
+# Archivos de base de datos (importante: no subir la BD con datos)
 *.db
 *.sqlite
 *.sqlite3
+instance/*.db
+instance/*.sqlite
+!instance/.gitkeep
 
-# Variables de entorno
+# Variables de entorno (contienen secretos)
 .env
-.flaskenv
+.env.local
+.env.production
 
-# IDE
+# Archivos de IDE/Editor
 .vscode/
 .idea/
 *.swp
+*.swo
+*~
+.DS_Store
 
 # Archivos de log
 *.log
+logs/
 
-# OS
-.DS_Store
+# Archivos de pytest
+.pytest_cache/
+.tox/
+.coverage
+htmlcov/
+
+# Archivos de despliegue
+*.pyo
+*.pyd
+
+# Archivos de Windows
 Thumbs.db
+ehthumbs.db
+Desktop.ini
 
-# Render / despliegue
-*.pid
+# Archivos de macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Archivos de pruebas (opcional)
+test_*.py
+*_test.py
+
+# Archivos de backup
+*.bak
+*.tmp
+*.temp
+
+# Archivos de Render (si los generas)
+.render/
